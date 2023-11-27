@@ -1,0 +1,20 @@
+{
+  "name": "projeto-impressoras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Paulo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "puppeteer": "^21.1.0", 
+    "type": "module"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^1.11.1"
+  }
+}

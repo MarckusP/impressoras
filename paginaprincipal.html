@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="top-bar">
+        <div class="image">
+            <img src="./img/Logotechnocerto.png" alt="">
+        </div>
+        <span class="form">
+            <span>
+                <label class="title-form" for="lista">Cadastro impressora</label>
+            </span>
+            <div class="bar-nav">
+
+                <span>
+                    <label class="campo" for="idmodel">Selecione o modelo</label><br>
+                    <select name="Modelo" id="idmodel">
+                        <option value="Null">Selecione</option>
+                        <option value="Ricoh">Ricoh</option>
+                        <option value="Kyocera">Kyocera</option>
+                    </select>
+                    </select>
+                    <!-- <input class="input-box" id="idmodel" type="text" name="idaddress" value=""
+                        placeholder="Endereço IP" maxlength="15"> -->
+                </span>
+
+                <span>
+                    <label class="campo" for="iddepartamento">Departamento</label><br>
+                    <input class="input-box" id="iddepartamento" type="text" name="iddepartamento" value=""
+                        placeholder="Departamento da impressora">
+                </span>
+
+                <span>
+                    <label class="campo" for="idaddress">Digite o IP</label><br>
+                    <input class="input-box" id="idaddress" type="text" name="idaddress" value=""
+                        placeholder="Endereço IP" maxlength="15">
+                </span>
+            </div>
+        </span>
+        <span>
+            <div class="button">
+
+                <div>
+                    <button type="submit" id="enviar">
+                        Cadastrar
+                    </button>
+                </div>
+
+                <div>
+                    <button href="./listar.html">Atualizar</button>
+                </div>
+
+            </div>
+        </span>
+    </nav>
+
+    <div class="Organizer" id="Organizer">
+        <div class="impressoras"></div>
+
+    </div>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </script>
+</body>
+
+</html>
