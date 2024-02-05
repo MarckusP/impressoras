@@ -1,7 +1,3 @@
-Claro, aqui está um exemplo de README usando tags para personalização, incluindo um espaço para um print do projeto:
-
----
-
 # Printer Network Management
 
 ![Screenshot_2](https://github.com/MarckusP/impressoras/assets/111365757/fd62a648-901f-4e85-9f0d-1e235896c4c0)
@@ -40,18 +36,6 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 ```
 
-2. Instale as dependências:
-
-```bash
-npm install
-```
-
-3. Execute o script principal:
-
-```bash
-node main.js
-```
-
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
@@ -59,7 +43,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull r
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
----
-
-Lembre-se de substituir "seu-usuario", "seu-repositorio" e "url_do_seu_print" pelos seus detalhes específicos. O link do print deve apontar para uma imagem representativa do seu projeto.
