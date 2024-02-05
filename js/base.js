@@ -1,5 +1,22 @@
-import puppeteer from "puppeteer";
-import { sharedata } from "./index.js";
+import puppeteer from "puppeteer"
+
+
+
+
+// export function processarDados({ modelo, departamento, ipaddress }) {
+//     // Aqui você pode fazer o processamento necessário com os dados
+//     console.log(`Dados recebidos: Modelo: ${modelo}, Departamento: ${departamento}, IP: ${ipaddress}`);
+
+//     // Chame a função para mostrar as informações na página
+//     mostrarInformacoes(modelo, departamento, ipaddress);
+// }
+
+
+
+
+
+
+
 
 function espacoEmBranco(str) {
     let name = str.replace(/(\t)+/g, "");
@@ -39,7 +56,7 @@ function idmachine(str) {
     return { firmware, idprinter };
 }
 
-console.log(sharedata)
+// console.log(sharedata)
 //let bolean name = document.querySelector(".resposta");
 (async () => {
     // Define a opção para ignorar os erros de certificado SSL
@@ -51,14 +68,14 @@ console.log(sharedata)
 
     const page = await browser.newPage();
 
-    await page.goto('https://192.168.60.20/main.asp?Lang=en-us');
+    await page.goto('https://192.168.0.103/main.asp?Lang=en-us');
     n = await page.$("[class='toner']")
     name = await (await n.getProperty('width')).jsonValue();
     console.log(`Total tonner: ${name}`);
 
 
 
-    await page.goto('https://192.168.60.20/counter.asp?Lang=en-us');
+    await page.goto('https://192.168.0.103/counter.asp?Lang=en-us');
     n = await page.$("[class='rightMargin']")
     name = await (await n.getProperty('textContent')).jsonValue();
     let formatado = espacoEmBranco(name);
@@ -67,7 +84,7 @@ console.log(sharedata)
     console.log(`\nTotal de paginas impressas: ${totalPage}`);
     console.log(`\nTotal em duplex: ${duplex}`);
 
-    await page.goto('https://192.168.60.20/machinei.asp?Lang=en-us');
+    await page.goto('https://192.168.0.103/machinei.asp?Lang=en-us');
     n = await page.$("[class='sCategory']")
     name = await (await n.getProperty('textContent')).jsonValue();
     formatado = espacoEmBranco(name);

@@ -1,6 +1,6 @@
+// import { processarDados } from "./base.js";
 
-
-let departamento, impressoraIP, modelo;
+// let departamento, impressoraIP, modelo;
 
 
 
@@ -19,15 +19,17 @@ const importarForm = (event) => {
     loadingButton();
 
     // alert("Voce está aqui");
-    modelo = document.getElementById('idmodel').value
-    departamento = document.getElementById('iddepartamento').value
-    impressoraIP = document.getElementById('idaddress').value
+    let modelo = document.getElementById('idmodel').value
+    let departamento = document.getElementById('iddepartamento').value
+    let impressoraIP = document.getElementById('idaddress').value
     console.log(modelo, departamento, impressoraIP)
 
     mostrarInformacoes();
+
+
+
+
     loadingButtonRemove();
-
-
 
 }
 
@@ -90,9 +92,6 @@ function CreatPrint(empresa, tonner, pages, duplex, firmawre, serialNumber) {
     back.appendChild(ul)
     let bodycad = document.getElementById("Organizer");
     bodycad.appendChild(back)
-}
-export function sharedata(modelo, departamento, ipaddress) {
-    return modelo, departamento, ipaddress;
 }
 
 document.getElementById('enviar').addEventListener('click', importarForm);
