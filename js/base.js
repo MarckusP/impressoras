@@ -93,7 +93,8 @@ function idmachine(str) {
     console.log(`\nNúmero de série: ${idprinter}`);
 
     //await page.screenshot({ path: 'maquina.png'});
-
+  
+    
 
     await browser.close();
 })
